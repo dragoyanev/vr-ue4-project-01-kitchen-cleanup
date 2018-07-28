@@ -3,6 +3,12 @@
 	"EngineAssociation": "4.15",
 	"Category": "",
 	"Description": "",
+	"Plugins": [
+		{
+			"Name": "OculusAudio",
+			"Enabled": true
+		}
+	],
 	"TargetPlatforms": [
 		"PS4",
 		"WindowsNoEditor"
