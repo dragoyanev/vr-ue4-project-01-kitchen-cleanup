@@ -10,7 +10,7 @@ This project makes a game within Unreal Engine 4 for room-scale VR. It is needed
 - [Oculus Home](https://www.oculus.com/setup/)
 
 ## Audio Assets 
-- [Original samples downloaded from] ](https://freesound.org)
+- [Original samples downloaded from] (https://freesound.org)
 
 ## Detailed description
 The game experience is lasting 60 seconds before the game is over. Every 10 seconds are spawned additional 10 dirty dishes.
