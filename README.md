@@ -1,6 +1,6 @@
 # Unreal Engine 4 VR Kitchen Cleanup Project READ ME
 
-This project is part of [Udacity](https://www.udacity.com "Udacity - Be in demand")'s [Unreal Engine 4 VR Nanodegree](https://www.udacity.com)
+This project is part of [Udacity](https://www.udacity.com "Udacity - Be in demand")'s [Unreal Engine 4 VR Nanodegree](https://www.udacity.com) and is based on the template project provided by the course in [GitHub](https://github.com/udacity/Unreal-Intro-Project-Template).
 
 This project makes a game within Unreal Engine 4 for room-scale VR. It is needed to utilize motion controllers for a kitchen-themed interaction game. Spawn messy dishes and get them into the sink as quickly as possible!
 
