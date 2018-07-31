@@ -2,7 +2,7 @@
 
 This project is part of [Udacity](https://www.udacity.com "Udacity - Be in demand")'s [Unreal Engine 4 VR Nanodegree](https://www.udacity.com)
 
-This project make a game within Unreal Engine 4 for room-scale VR. It is needed to utilize motion controllers for a kitchen-themed interaction game. Spawn messy dishes and get them into the sink as quickly as possible!
+This project makes a game within Unreal Engine 4 for room-scale VR. It is needed to utilize motion controllers for a kitchen-themed interaction game. Spawn messy dishes and get them into the sink as quickly as possible!
 
 
 ## Necessary Software
@@ -13,11 +13,11 @@ This project make a game within Unreal Engine 4 for room-scale VR. It is needed 
 - [Original samples downloaded from] ](https://freesound.org)
 
 ## Detailed description
-The game experience is lasting 60 seconds and game is over. Every 10 seconds are spawned 10 dirty dishes.
+The game experience is lasting 60 seconds before the game is over. Every 10 seconds are spawned additional 10 dirty dishes.
 
-- Player should press the Red button in the scene to start the game. It have text shown in front of the player view. Every time the Red button is pressed the game is restarted
+- Player should go over the "Red button" in the scene with one of the controllers meshes to start the game. It have helping text shown in front of the player view . Every time the Red button is pressed the game is restarted
 - Plates are spawned from the Left controller current position within the reach of the player, in the kitchen.
-- The plates can be grabbed with Grip button when the top of the stick is in the plate range and should be moved to the sink
+- The plates can be grabbed pressing Grip button when the top of the controller mesh (magic wand) is in the plate range. Plate should be moved to the sink area.
 - When plates get to the sink, they then "disappear" only if staying there continuously for 2 seconds and are removed from level.
 - More plates spawn after a set amount of time 10 seconds, plates spawn in waves. 
 - Actor bp_sink_box acts as the sink that "washes" the plates
@@ -30,3 +30,8 @@ Timer is created in MyVRPawn.
 - For the game experience are used both motion controllers. Plates are grabbed by Grip buttons.
 - Audio cue is played when plate clening is finished
 - Audio cue is played in loop when the level starts until the timer ends.
+
+ToDo, know issues:
+- kitchen counter have big collision area and blocks the plate to enter inside the sink. It is needed revision of this collision area. Now the sink area box is made bigger in order to be possible washing of plates.
+- random spawning function should be reworked. Should consider using: Random point in bounding box, Get random reachable point in  radius or Get random point inNavigable Radius
+- use more sound cues for every event
