@@ -1,19 +1,32 @@
-# Unreal Engine 4 VR Intro Starter Project READ ME
+# Unreal Engine 4 VR Kitchen Cleanup Project READ ME
 
 This project is part of [Udacity](https://www.udacity.com "Udacity - Be in demand")'s [Unreal Engine 4 VR Nanodegree](https://www.udacity.com)
 
-This project is your first chance to make a game within Unreal Engine 4 for either standing or room-scale VR. You’ll need to utilize motion controllers to build a kitchen-themed interaction game, and you’ll use functions, physics, blueprint communication, and audio to create an immersive experience. Spawn messy dishes and get them into the sink as quickly as possible!
-
+This project make a game within Unreal Engine 4 for room-scale VR. It is needed to utilize motion controllers for a kitchen-themed interaction game. Spawn messy dishes and get them into the sink as quickly as possible!
 
 
 ## Necessary Software
-- [Epic Games Launcher, Unreal Engine 4.14 or 4.15](https://www.unrealengine.com/en-US/blog)
-- [SteamVR](http://store.steampowered.com/steamvr) OR [Oculus Home](https://www.oculus.com/setup/)
+- [Epic Games Launcher, Unreal Engine 4.15](https://www.unrealengine.com/en-US/blog)
+- [Oculus Home](https://www.oculus.com/setup/)
 
-<img src="https://d17h27t6h515a5.cloudfront.net/topher/2017/November/5a0ef225_epiclauncher/epiclauncher.png" width="50%"/>
+## Audio Assets 
+- [Original samples downloaded from] ](https://freesound.org)
 
-## New To Github?
+## Detailed description
+The game experience is lasting 60 seconds and game is over. Every 10 seconds are spawned 10 dirty dishes.
 
-Github is one of the best ways for software developers to store their code and easily make changes that are then tracked and easily shareable with your team of developers. If you would like to learn more about Github, Udacity offers [a free course on how to use Github](https://www.udacity.com/course/how-to-use-git-and-github--ud775). For the puposes of the VR Nanodgree, you will simply need to download this project by:
-1. Clicking **"Clone or download"**
-2. Clicking **"Download ZIP"**
+- Player should press the Red button in the scene to start the game. It have text shown in front of the player view. Every time the Red button is pressed the game is restarted
+- Plates are spawned from the Left controller current position within the reach of the player, in the kitchen.
+- The plates can be grabbed with Grip button when the top of the stick is in the plate range and should be moved to the sink
+- When plates get to the sink, they then "disappear" only if staying there continuously for 2 seconds and are removed from level.
+- More plates spawn after a set amount of time 10 seconds, plates spawn in waves. 
+- Actor bp_sink_box acts as the sink that "washes" the plates
+- After the plate stayed in the sink for 2 seconds it is "clean" and thus is counted towards the score.
+- Visually is kept track of how many plates have been washed and how many are dirty.
+- When game is started/restarted it ends after 60 seconds despawns all the plates.
+- Plates waves left are visible for the player.
+- The timer starts on event (StartTimer) casted by overlaping "Red button" in the scene with any of the controllers. The timer is looped and every 10 seconds calls event SpawnRandomPlates. The handle is destroyed when all waves of plates (currently set to 6) passed timer was triggered 6 times.
+Timer is created in MyVRPawn.
+- For the game experience are used both motion controllers. Plates are grabbed by Grip buttons.
+- Audio cue is played when plate clening is finished
+- Audio cue is played in loop when the level starts until the timer ends.
