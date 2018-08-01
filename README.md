@@ -4,6 +4,8 @@ This project is part of [Udacity](https://www.udacity.com "Udacity - Be in deman
 
 This project makes a game within Unreal Engine 4 for room-scale VR. It is needed to utilize motion controllers for a kitchen-themed interaction game. Spawn messy dishes and get them into the sink as quickly as possible!
 
+## Necessary Controller
+ - The project is developed and tested with Oculus Rift
 
 ## Necessary Software
 - [Epic Games Launcher, Unreal Engine 4.15](https://www.unrealengine.com/en-US/blog)
