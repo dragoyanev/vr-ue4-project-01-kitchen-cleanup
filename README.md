@@ -32,8 +32,3 @@ Timer is created in MyVRPawn.
 - For the game experience are used both motion controllers. Plates are grabbed by Grip buttons.
 - Audio cue is played when plate clening is finished
 - Audio cue is played in loop when the level starts until the timer ends.
-
-ToDo, know issues:
-- kitchen counter have big collision area and blocks the plate to enter inside the sink. It is needed revision of this collision area. Now the sink area box is made bigger in order to be possible washing of plates.
-- random spawning function should be reworked. Should consider using: Random point in bounding box, Get random reachable point in  radius or Get random point inNavigable Radius
-- use more sound cues for every event
