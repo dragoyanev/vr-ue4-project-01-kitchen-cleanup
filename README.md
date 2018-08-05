@@ -29,6 +29,7 @@ The game experience is lasting 60 seconds before the game is over. Every 10 seco
 - Plates waves left are visible for the player.
 - The timer starts on event (StartTimer) casted by overlaping "Red button" in the scene with any of the controllers. The timer is looped and every 10 seconds calls event SpawnRandomPlates. The handle is destroyed when all waves of plates (currently set to 6) passed timer was triggered 6 times.
 Timer is created in MyVRPawn.
-- For the game experience are used both motion controllers. Plates are grabbed by Grip buttons.
+- For the game experience are used both motion controllers. Plates are grabbed by Grip buttons. 
+- when two controllers are used on the same plate the last controller Grip event is holding/dropping the plate.
 - Audio cue is played when plate clening is finished
 - Audio cue is played in loop when the level starts until the timer ends.
