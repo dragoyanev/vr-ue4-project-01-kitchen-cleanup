@@ -15,7 +15,7 @@ This project makes a game within Unreal Engine 4 for room-scale VR. It is needed
 - Original samples downloaded from [freesound.org](https://freesound.org)
 
 ## Detailed description
-The game experience is lasting 60 seconds before the game is over. Every 10 seconds are spawned additional 10 dirty dishes.
+The game experience is lasting 60 seconds before the game is over. Every 10 seconds are spawned additional dirty dishes. At every new wave plates count that spawns is increased.
 
 - Player should go over the "Red button" in the scene with one of the controllers meshes to start the game. It have helping text shown in front of the player view . Every time the Red button is pressed the game is restarted
 - Plates are spawned from the Left controller current position within the reach of the player, in the kitchen.
